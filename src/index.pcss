@@ -334,11 +334,13 @@ input:-webkit-autofill {
   border-color: var(--primary-cta-color);
 
   &:hover {
-    background-color: (--cta-color-opacity-48);
-    color: var(--contrast-cta-color);
+    background-color: var(--cta-color-opacity-48);
+    border: 1px solid var(--cta-color-opacity-48);
   }
 
   &:disabled {
     color: var(--cta-contrast-opacity-48);
+    background-color: var(--cta-color-opacity-48);
+    border: 1px solid var(--cta-color-opacity-48);
   }
 }
