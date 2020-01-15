@@ -36,8 +36,8 @@ describe('Helpers', () => {
     };
 
     const depositColors = {
-        accepted: 'var(--color-green)',
-        collected: 'var(--color-green)',
+        accepted: 'var(--green)',
+        collected: 'var(--green)',
         submitted: '',
         canceled: 'var(--color-red)',
         rejected: 'var(--color-red)',
@@ -47,11 +47,11 @@ describe('Helpers', () => {
         prepared: '',
         submitted: '',
         canceled: 'var(--color-red)',
-        accepted: 'var(--color-green)',
+        accepted: 'var(--green)',
         suspected: '',
         rejected: 'var(--color-red)',
         processing: '',
-        succeed: 'var(--color-green)',
+        succeed: 'var(--green)',
         failed: 'var(--color-red)',
         confirming: '',
     };
@@ -62,7 +62,7 @@ describe('Helpers', () => {
             text: 'Sell',
         },
         buy: {
-            color: 'var(--color-green)',
+            color: 'var(--green)',
             text: 'Buy',
         },
     };
@@ -77,7 +77,7 @@ describe('Helpers', () => {
             color: 'var(--color-red)',
         },
         buy: {
-            color: 'var(--color-green)',
+            color: 'var(--green)',
         },
     };
 
@@ -144,8 +144,8 @@ describe('Helpers', () => {
     });
 
     it('Should return correct deposit status color', () => {
-        expect(helpers.setDepositStatusColor('accepted')).toEqual('var(--color-green)');
-        expect(helpers.setDepositStatusColor('collected')).toEqual('var(--color-green)');
+        expect(helpers.setDepositStatusColor('accepted')).toEqual('var(--green)');
+        expect(helpers.setDepositStatusColor('collected')).toEqual('var(--green)');
         expect(helpers.setDepositStatusColor('submitted')).toEqual('');
         expect(helpers.setDepositStatusColor('canceled')).toEqual('var(--color-red)');
         expect(helpers.setDepositStatusColor('rejected')).toEqual('var(--color-red)');
@@ -161,11 +161,11 @@ describe('Helpers', () => {
         expect(helpers.setWithdrawStatusColor('prepared')).toEqual('');
         expect(helpers.setWithdrawStatusColor('submitted')).toEqual('');
         expect(helpers.setWithdrawStatusColor('canceled')).toEqual('var(--color-red)');
-        expect(helpers.setWithdrawStatusColor('accepted')).toEqual('var(--color-green)');
+        expect(helpers.setWithdrawStatusColor('accepted')).toEqual('var(--green)');
         expect(helpers.setWithdrawStatusColor('suspected')).toEqual('');
         expect(helpers.setWithdrawStatusColor('rejected')).toEqual('var(--color-red)');
         expect(helpers.setWithdrawStatusColor('processing')).toEqual('');
-        expect(helpers.setWithdrawStatusColor('succeed')).toEqual('var(--color-green)');
+        expect(helpers.setWithdrawStatusColor('succeed')).toEqual('var(--green)');
         expect(helpers.setWithdrawStatusColor('failed')).toEqual('var(--color-red)');
         expect(helpers.setWithdrawStatusColor('confirming')).toEqual('');
     });

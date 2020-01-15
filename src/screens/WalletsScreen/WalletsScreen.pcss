@@ -159,7 +159,7 @@
         &::before {
           content: '';
           width: 4px;
-          background-color: var(--color-blue);
+          background-color: var(--primary-cta-color);
           height: calc(var(--gap) * 9);
           border-top-left-radius: calc(var(--gap) * 0.66);
           border-bottom-left-radius: calc(var(--gap) * 0.66);
@@ -244,7 +244,7 @@
 
         &:focus-within {
           label {
-            color: var(--accent) !important;
+            color: var(--primary-cta-color) !important;
           }
         }
       }
@@ -309,7 +309,7 @@
     font-size: calc(var(--gap) * 2.6);
 
     &__active {
-      border-bottom: 1px solid var(--active-tab-color);
+      border-bottom: 1px solid var(--primary-cta-color);
       background: transparent;
     }
   }
